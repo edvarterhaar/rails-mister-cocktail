@@ -8,7 +8,7 @@ class DosesController < ApplicationController
       redirect_to cocktail_path(@cocktail)
     else
       @cocktail = Cocktail.new
-      render 'cocktails/show'
+      render :new
     end
   end
 
